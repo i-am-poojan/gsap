@@ -21,7 +21,10 @@ gsap.from("#page2 #box",{
         trigger:"#page2 #box",
         scroller:"body",
         markers:true,
-        start:"top 50%"
+        start:"top 50%",
+        end:"top 30%",
+        scrub:true 
+        // scrub:5 // you can arrange according to requirement of smoothness
     }
 
 })
