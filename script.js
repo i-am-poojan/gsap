@@ -1,14 +1,21 @@
 const tl=gsap.timeline()
-tl.to("#box1",{
-    x:"1200px",
+tl.from(".logo",{
+    y:-20,
+    opacity:0,
     duration:1,
-    delay:1
+    delay:0.5
 })
-tl.to("#box2",{
-    x:"1200px",
-    duration:1, 
+tl.from("h3",{
+    y:-20,
+    opacity:0,
+    duration:0.2,
+    delay:0.2,
+    stagger:1
 })
-tl.to("#box3",{
-    x:"1200px",
-    duration:1, 
+tl.from('h1',{
+    y:-20,
+    opacity:0,
+    delay:0.5,
+    duration:1,
+    scale:0.2
 })
