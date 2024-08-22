@@ -12,3 +12,10 @@ gsap.from("#box2",{
     duration:2,
     delay:1.5
 })
+gsap.from("h1",{
+    opacity:0,
+    y:20,
+    duration:1,
+    delay:0.5,
+    stagger:1
+})
