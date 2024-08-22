@@ -1,21 +1,40 @@
-const tl=gsap.timeline()
-tl.from(".logo",{
-    y:-20,
-    opacity:0,
+gsap.from("#page1 #box",{
+    scale:0,
+    delay:0,
     duration:1,
-    delay:0.5
+    rotate:360,
+    // scrollTrigger:"#page1 #box"
+    scrollTrigger:{
+        trigger:"#page1 #box",
+        scroller:"body",
+        markers:true,
+        start:"top 40%"
+    }
 })
-tl.from("h3",{
-    y:-20,
-    opacity:0,
-    duration:0.2,
-    delay:0.2,
-    stagger:1
-})
-tl.from('h1',{
-    y:-20,
-    opacity:0,
-    delay:0.5,
+gsap.from("#page2 #box",{
+    scale:0,
+    delay:0,
     duration:1,
-    scale:0.2
+    rotate:360,
+    // scrollTrigger:"#page2 #box"
+    scrollTrigger:{
+        trigger:"#page2 #box",
+        scroller:"body",
+        markers:true,
+        start:"top 50%"
+    }
+
+})
+gsap.from("#page3 #box",{
+    scale:0,
+    delay:0,
+    duration:1,
+    rotate:360,
+    // scrollTrigger:"#page3 #box"
+    scrollTrigger:{
+        trigger:"#page3 #box",
+        scroller:"body",
+        markers:true,
+        start:"top 60%"
+    }
 })
