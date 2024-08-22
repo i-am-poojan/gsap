@@ -1,43 +1,13 @@
-gsap.from("#page1 #box",{
-    scale:0,
-    delay:0,
-    duration:1,
-    rotate:360,
-    // scrollTrigger:"#page1 #box"
+gsap.to('#page2 h1',{
+    transform:"translateX(-75%)",
     scrollTrigger:{
-        trigger:"#page1 #box",
+        trigger:"#page2", //here always select parents which thing you can try to pin
         scroller:"body",
         markers:true,
-        start:"top 40%"
-    }
-})
-gsap.from("#page2 #box",{
-    scale:0,
-    delay:0,
-    duration:1,
-    rotate:360,
-    // scrollTrigger:"#page2 #box"
-    scrollTrigger:{
-        trigger:"#page2 #box",
-        scroller:"body",
-        markers:true,
-        start:"top 50%",
-        end:"top 30%",
-        scrub:true 
-        // scrub:5 // you can arrange according to requirement of smoothness
+        start:"top 0%",
+        end:"top -120%",
+        scrub:2,
+        pin:true
     }
 
-})
-gsap.from("#page3 #box",{
-    scale:0,
-    delay:0,
-    duration:1,
-    rotate:360,
-    // scrollTrigger:"#page3 #box"
-    scrollTrigger:{
-        trigger:"#page3 #box",
-        scroller:"body",
-        markers:true,
-        start:"top 60%"
-    }
 })
